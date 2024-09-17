@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="viewmovies.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<h1>Vega Movies</h1>
+<nav>
+<a href="/home">Home</a>
+<a href="/map-deletemovie">Delete Movie</a>
+<a href="/logout">Logout</a>
+</nav>
+</header>
+<h2>All Movies</h2>
+<table border="1">
+<thead>
+    <tr>
+       <td>Id</td>
+       <td>Name</td>
+       <td>Link</td>
+       <td>Genre</td>
+       <td>Cast</td>
+       <td>Director</td>
+     </tr>
+</thead>
+<tbody>
+    <tr th:each="movie : ${movie}">
+        <td th:text="${movie.id}"></td>
+        <td th:text="${movie.moviename}"></td>
+        <td th:utext="${movie.movielink}"></td>
+        <td th:text="${movie.moviegenre}"></td>
+        <td th:text="${movie.moviecast}"></td>
+        <td th:text="${movie.moviedirector}"></td>
+     </tr>
+</tbody>     
+</table>
+</body>
+</html>

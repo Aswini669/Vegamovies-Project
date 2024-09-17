@@ -1,0 +1,104 @@
+/* General body styling with vibrant gradient background */
+body {
+    font-family: 'Poppins', sans-serif;  /* Modern and clean font */
+    background: linear-gradient(135deg, #ff758c, #ff7eb3, #84fab0, #8fd3f4);  /* Vibrant gradient background */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Styling for the main header */
+h1 {
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 60px; /* Increased space between header and buttons */
+    color: #fff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Styling for the span inside the header */
+h1 span {
+    color: #fff700; /* Bright yellow for emphasis */
+    font-style: italic;
+    text-decoration: underline; /* Adds an underline for extra emphasis */
+}
+
+/* Common link styling for Register and Login */
+a {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff6b6b, #f6d365); /* Gradient button */
+    color: white;
+    padding: 20px 60px; /* Increased button size */
+    margin: 20px; /* More space between buttons */
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 28px; /* Larger text */
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Aligning the buttons in a column */
+a:nth-child(1), a:nth-child(2) {
+    width: 50%; /* Adjust the width of the button */
+    max-width: 500px;
+    min-width: 250px;
+}
+
+/* Hover effect for buttons */
+a:hover {
+    background: linear-gradient(135deg, #34e89e, #0f3443); /* Darker gradient on hover */
+    transform: scale(1.1);
+    color: #fff;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect with "wave" animation */
+a::before {
+    content: '';
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: -200%;
+    left: -200%;
+    background: rgba(255, 255, 255, 0.15);
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+}
+
+a:hover::before {
+    top: 150%;
+    left: 150%;
+}
+
+/* Additional styling for layout */
+a {
+    margin-bottom: 30px; /* Increase the spacing between the buttons */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    a {
+        font-size: 20px;
+        padding: 16px 40px;
+    }
+
+    a:nth-child(1), a:nth-child(2) {
+        width: 80%; /* Full width for smaller screens */
+    }
+}

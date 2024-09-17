@@ -1,0 +1,94 @@
+/* General body styling with a light gradient background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #ff9a8b, #f6c6c6); /* Warm shades */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form container styling */
+form {
+    background-color: #ffffff;
+    padding: 60px; /* Increased padding */
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1); /* Slightly more shadow */
+    max-width: 400px; /* Increased width */
+    width: 100%;
+}
+h2 {
+    font-family: 'Poppins', sans-serif; /* Consistent font */
+    font-size: 26px; /* Larger font size for visibility */
+    font-weight: bold;
+    color: #28a745; /* Green color to indicate success */
+    text-align: center;
+    margin-bottom: 20px; /* Space below the message */
+    padding: 15px;
+    border: 2px solid #28a745; /* Green border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #d4edda; /* Light green background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 12px; /* Increased margin */
+    font-size: 20px; /* Increased font size */
+    color: #333;
+    font-weight: 600; /* Slightly bolder font */
+}
+
+/* Input field styling */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    margin-bottom: 25px; /* Increased margin */
+    border: 2px solid #ddd; /* Slightly lighter border */
+    border-radius: 12px; /* Slightly more rounded corners */
+    font-size: 18px; /* Increased font size */
+    color: #444; /* Darker text color */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Input field hover/focus effects */
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #34a853; /* Changed border color on focus */
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #34a853; /* Green background color */
+    color: white;
+    border: 2px solid #34a853; /* Border matching the background color */
+    padding: 14px 24px; /* Increased padding */
+    font-size: 20px; /* Increased font size */
+    font-weight: bold;
+    border-radius: 12px; /* Rounded corners */
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transition for both background and border colors */
+}
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+    background-color: #2c8c40; /* Darker green on hover */
+    border-color: #2c8c40; /* Matching border color on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    form {
+        padding: 25px; /* Adjusted padding for smaller screens */
+    }
+
+    input[type="submit"] {
+        font-size: 18px; /* Adjusted font size for smaller screens */
+    }
+}

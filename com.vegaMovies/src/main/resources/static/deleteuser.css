@@ -1,0 +1,135 @@
+/* Global styling */
+body {
+    font-family: 'Poppins', sans-serif;
+background: linear-gradient(135deg, #e0f7fa, #b9fbc0, #fddfdf, #f7d7e6);    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form container styling */
+form {
+    background-color: #ffffff; /* White background for the form */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Input field styling */
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Input field hover/focus effects */
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+    border-color: #3498db; /* Blue border color on focus */
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #3498db; /* Blue background for the button */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+    }
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 30px; /* Space below header */
+    width: 100%; /* Full width for header */
+    position: absolute; /* Absolute positioning for header */
+    top: 20px; /* Distance from the top */
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px; /* Larger font size */
+    font-weight: 700; /* Bold weight */
+    color: #ffffff; /* White text for contrast */
+    margin: 0;
+    padding: 20px 25px; /* Increased padding for better appearance */
+    background-color: rgba(0, 0, 0, 0.5); /* Darker transparent background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* More prominent shadow */
+}
+header {
+   /* position: relative; *//* To position the nav bar within the header */
+    text-align: center;
+    margin-bottom: 30px; /* Space below header */
+    width: 100%; /* Full width for header */
+    position: absolute; /* Absolute positioning for header */
+    top: 20px; /* Distance from the top */
+
+}
+
+nav {
+    position: absolute; /* Position the nav bar absolutely within the header */
+    top: 20px; /* Space from the top of the header */
+    right: 20px; /* Space from the right edge of the header */
+    display: flex;
+    gap: 15px; /* Space between links */
+}
+
+nav a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #3498db; /* Blue color for the links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 8px 12px; /* Padding around the links */
+    border-radius: 8px; /* Rounded corners for the links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+nav a:hover {
+    background-color: #3498db; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+}

@@ -1,0 +1,133 @@
+/* General body styling with a light gradient background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #ff9a8b, #f6c6c6); /* Warm shades */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Align items vertically */
+}
+
+/* Styling for the h2 tag as an error message */
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #d9534f; /* Bright red color for high visibility */
+    text-align: center;
+    margin-bottom: 20px; /* Space below the message */
+    padding: 15px;
+    border: 2px solid #d9534f; /* Matching border color */
+    border-radius: 10px; /* Rounded corners for the border */
+    background-color: #f8d7da; /* Light red background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for emphasis */
+    max-width: 80%; /* Responsive width */
+    margin-left: auto;
+    margin-right: auto; /* Center the heading */
+}
+
+/* Form container styling */
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Form title styling */
+form h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Input field hover/focus effects */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #ff6b6b;
+}
+
+/* Gender radio buttons styling */
+input[type="radio"] {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+/* Textarea styling */
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+    background-color: #ff4d4d;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    form {
+        padding: 30px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+    }
+
+    /* Styling for the h2 tag */
+    h2 {
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+}

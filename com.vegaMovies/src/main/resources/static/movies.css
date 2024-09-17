@@ -1,0 +1,159 @@
+/* Global styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f8b400, #f8a5c2, #dcedc1, #6a1b9a); /* Mixed gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form container styling */
+form {
+    background-color: #ffffff; /* White background for the form */
+    padding: 30px; /* Increased padding for more space inside the form */
+    padding-right: 60px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin-top: 60px; /* Add space above the form */
+}
+
+/* Heading styling */
+h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 15px; /* Space below each label */
+    font-size: 18px; /* Slightly larger font size for labels */
+    color: #333;
+    font-weight: 500;
+}
+
+/* Input field and select styling */
+input[type="text"],
+select {
+    width: 100%; /* Make the select field the same width as the input field */
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Input field and select hover/focus effects */
+input[type="text"]:focus,
+select:focus {
+    border-color: #f8b400; /* Change border color on focus */
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #f8b400; /* Bright orange background for the button */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%;
+    transition: background-color 0.3s ease;
+}
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+    background-color: #e07b39; /* Darker orange on hover */
+}
+
+/* Styling for the h2 tag */
+h2 {
+    font-family: 'Poppins', sans-serif; /* Consistent font family */
+    font-size: 25px; /* Larger font size for emphasis */
+    font-weight: bold; /* Bold text for prominence */
+    color: #388e3c; /* A slightly lighter and more vibrant green color */
+    text-align: center; /* Center-align the text */
+    margin: 10px 0; /* Space above and below the heading */
+    padding: 5px; /* Increased padding around the text */
+    background-color: #e8f5e9; /* Light green background for a fresh look */
+    border: 2px solid #388e3c; /* Darker green border matching the text color */
+    border-radius: 10px; /* Slightly more rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow for emphasis */
+    max-width: 100%; /* Responsive width */
+    margin-left: auto; /* Center the heading */
+    margin-right: auto; /* Center the heading */
+    display: inline-flex; /* Ensures the content stays in a single line */
+    align-items: center; /* Align items vertically */
+    white-space: nowrap; /* Prevents line breaks */
+    overflow: hidden; /* Ensures no overflow */
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 30px; /* Space below header */
+    width: 100%; /* Full width for header */
+    position: absolute; /* Absolute positioning for header */
+    top: 20px; /* Distance from the top */
+}
+
+/* Header h1 styling */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px; /* Larger font size */
+    font-weight: 700; /* Bold weight */
+    color: #ffffff; /* White text for contrast */
+    margin: 0;
+    padding: 20px 25px; /* Increased padding for better appearance */
+    background-color: rgba(0, 0, 0, 0.5); /* Darker transparent background */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* More prominent shadow */
+}
+
+/* Navigation styling */
+nav {
+    position: absolute; /* Position the nav bar absolutely within the header */
+    top: 20px; /* Space from the top of the header */
+    right: 20px; /* Space from the right edge of the header */
+    display: flex;
+    gap: 15px; /* Space between links */
+}
+
+nav a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #3498db; /* Blue color for the links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 8px 12px; /* Padding around the links */
+    border-radius: 8px; /* Rounded corners for the links */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+nav a:hover {
+    background-color: #3498db; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    form {
+        padding: 20px; /* Reduced padding for smaller screens */
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+    }
+}
